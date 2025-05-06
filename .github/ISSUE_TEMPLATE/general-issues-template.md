@@ -1,7 +1,7 @@
 ---
 name: General Issues Template
 about: This issue template is for adding tasks
-title: "[DESIGNER/DEVELOPER/OTHER]"
+title: "[Title of Issue]"
 labels: ''
 assignees: ''
 
