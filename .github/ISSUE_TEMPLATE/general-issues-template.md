@@ -32,5 +32,5 @@ How much time is estimated for this task?
 - [ ] Unit tests have been written for all new logic
 - [ ] Code passes all local tests (unit, integration if applicable)
 - [ ] Proper documentation provided if needed (comments, docstrings, in appropriate document in `\docs\`)
-- [ ] On a development branch and able to be merged with `main` branch
+- [ ] Changes are first put in a development branch and able to be merged with `main` branch
 - [ ] Pull request reviewed by 2 other people
