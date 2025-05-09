@@ -1,5 +1,5 @@
 # restaurant-crisis
-Restaurant Crisis: A CSE 110 Project (Team 25)
+[Restaurant Crisis](https://cse110-sp25-group25.github.io/restaurant-crisis/): A CSE 110 Project (Team 25)
 
 ## Setup
 
