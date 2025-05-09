@@ -1,0 +1,28 @@
+<!-- TODO: Incorporate testing html to __tests__ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Firebase API Test</title>
+  <script type="module">
+    import { getRestaurants, saveLikedRestaurant, getLikedRestaurants } from './api.js';
+
+    async function runTests() {
+      const restaurants = await getRestaurants();
+      console.log("Restaurants:", restaurants);
+
+      await saveLikedRestaurant('dummyUser1', 'dummy-2');
+      console.log("Saved liked restaurant for dummyUser1");
+
+      const accepted = await getLikedRestaurants('dummyUser1');
+      console.log("Liked restaurants:", accepted);
+    }
+
+    runTests();
+  </script>
+</head>
+<body>
+  <h1>Check console for output</h1>
+</body>
+</html>
