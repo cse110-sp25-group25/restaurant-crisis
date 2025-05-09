@@ -1,4 +1,4 @@
-name: Unit Tests # name of the test
+name: CI # name of the test
 
 on: [push, pull_request] # the Github Action will activate "on" the event that you "push" to the repo
 
@@ -11,8 +11,11 @@ jobs: # the things being executed
         run: npm install
       - name: Unit Test
         run: npm test ./__tests__/dummy-test.js # the actual testing line
-  eslint:
+  lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: stefanoeb/eslint-action@1.0.2
+    - uses: actions/checkout@v4
+    - name: Install modules
+      run: npm install
+    - name: Run ESLint
+      run: npx eslint ./
