@@ -3,7 +3,7 @@ name: CI # name of the test
 on:
   push:
     branches:
-      - main
+      - main # only run on direct pushes to main
   pull_request:
     # run on all PRs
 
