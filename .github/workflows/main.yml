@@ -14,8 +14,5 @@ jobs: # the things being executed
   eslint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Install dependencies
-        run: npm install
-      - name: Run ESLint
-        run: npx eslint .
+      - uses: actions/checkout@v1
+      - uses: stefanoeb/eslint-action@1.0.2
