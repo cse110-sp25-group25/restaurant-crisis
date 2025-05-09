@@ -10,7 +10,7 @@ jobs: # the things being executed
       - name: Install Dependencies
         run: npm install
       - name: Unit Test
-        run: npm test ./__tests__/dummy-test.js # the actual testing line
+        run: npm run test # run all tests
   lint:
     runs-on: ubuntu-latest
     steps:
