@@ -22,10 +22,12 @@ export async function addRestaurant(restaurantData) {
 }
 
 // Add a new user
-export async function addUser(userId, userData = {}) {
-  await db.ref(`users/${userId}`).set(userData);
-  console.log(`Added user: ${userId}`);
-}
+export async function addUser(userId, likedRestaurants = {}) {
+    // Write the map/array itself, not an object with extra keys
+    await db.ref(`users/${userId}`).set(likedRestaurants);
+    console.log(`Added user: ${userId}`);
+  }
+  
 
 // Delete a user
 export async function deleteUser(userId) {
