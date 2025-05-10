@@ -1,0 +1,9 @@
+module.exports = {
+    testEnvironment: "jsdom",
+    moduleNameMapper: {
+      '^https?://www\\.gstatic\\.com/firebasejs/.*/firebase-app\\.js$'      : 'firebase/app',
+      '^https?://www\\.gstatic\\.com/firebasejs/.*/firebase-database\\.js$': 'firebase/database',
+    },
+    transformIgnorePatterns: ['/node_modules/(?!firebase/.*)'],
+  };
+  

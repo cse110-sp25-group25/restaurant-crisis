@@ -1,5 +1,4 @@
 // db.js
-import { initializeApp, cert } from "firebase-admin/app";
 import { getDatabase } from "firebase-admin/database";
 
 const admin = await import("firebase-admin");
