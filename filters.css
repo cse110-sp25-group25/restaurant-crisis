@@ -1,0 +1,135 @@
+/* prototype css */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f3e8;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    background-color: #cfe3cc;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Main Layout */
+  main {
+    padding: 3rem 1rem;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  /* Headings */
+  h2 {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+  }
+  
+  /* Filter Selection Buttons Grid */
+  .filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    max-width: 400px;
+    margin: 0 auto 2.5rem auto;
+  }
+  
+  /* All Buttons */
+  button {
+    padding: 0.8rem 1.6rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .filter-buttons button {
+    background-color: #b9cfb8;
+    color: #333;
+    width: 150px; /* or use 100% if you prefer flexible size */
+    text-align: center;
+  }
+  
+  /* Skip & Confirm */
+  .skip-btn,
+  .confirm-btn {
+    background-color: #3f4533;
+    color: #fff;
+    width: 50%;
+    max-width: 200px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Filter Options Grid */
+  .options-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .option-btn {
+    background-color: #cfe3cc;
+    color: #333;
+    padding: 0.75rem 1.5rem;
+    border-radius: 12px;
+  }
+  
+  /* Selected Button State */
+  .option-btn.selected {
+    background-color: #8fa98d;
+    color: white;
+  }
+  
+  /* Distance Input */
+  input[type="number"] {
+    padding: 0.75rem;
+    font-size: 1rem;
+    width: 80%;
+    max-width: 300px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 2rem;
+  }
+  
+  /* Hidden Sections */
+  .hidden {
+    display: none;
+  }
+  
+  /* Mobile Layout */
+  @media (max-width: 600px) {
+    .filter-buttons {
+      grid-template-columns: 1fr;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+  
